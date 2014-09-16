@@ -1,4 +1,4 @@
-package com.example.cucumber007.ibeacon;
+package ua.com.i2i.ibeaconbukva;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -129,7 +129,7 @@ public class BeaconServiceListener extends IntentService implements IBeaconConsu
                     .setTicker(ticker)
                     .setContentTitle(title)
                     .setContentText(message + sOffer)
-                    .setSmallIcon(R.drawable.argo)
+                    .setSmallIcon(R.drawable.logo_notification)
                     .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                     .setContentIntent(pIntent).build();
             noti.flags = Notification.FLAG_AUTO_CANCEL;
