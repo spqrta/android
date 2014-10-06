@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.com.i2i.ibeaconoceanplaza">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:theme="@style/AppTheme">
+
+        <service android:name="ua.com.i2i.ibeaconoceanplaza.BeaconServiceListener" />
+        <service
+            android:name="com.radiusnetworks.ibeacon.service.IBeaconService"
+            >
+        </service>
+        <service
+            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"
+            android:exported="false"
+            >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+
+            <intent-filter android:priority="1" >
+                <action android:name="com.example.cucumber007.beacon.DID_RANGING" />
+                <action android:name="com.example.cucumber007.beacon.DID_MONITORING" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="ua.com.i2i.ibeaconoceanplaza.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ua.com.i2i.ibeaconoceanplaza.EnterActivity"
+            android:label="@string/title_activity_enter" >
+        </activity>
+        <activity
+            android:name="ua.com.i2i.ibeaconoceanplaza.CoatActivity"
+            android:label="@string/title_activity_coat" >
+        </activity>
+        <activity
+            android:name="ua.com.i2i.ibeaconoceanplaza.ShoesActivity"
+            android:label="@string/title_activity_shooes" >
+        </activity>
+
+    </application>
+
+</manifest>

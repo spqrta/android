@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ocean Plaza</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ent">EntActivity</string>
+    <string name="title_activity_enter">EnterActivity</string>
+    <string name="qbeacon_background_service">QBeaconBackgroundService</string>
+    <string name="welcome_app">Welcome to our application!</string>
+    <string name="welcome_bt">\n\nTurn on your\'s bluetooth\nand stay closer to our shop!</string>
+    <string name="welcome_shop">Welcome to our shop!</string>
+    <string name="title_activity_coat">CoatActivity</string>
+    <string name="title_activity_shooes">ShooesActivity</string>
+
+</resources>

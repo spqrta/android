@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MobyLife.iml" filepath="$PROJECT_DIR$/MobyLife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mobylife.iml" filepath="$PROJECT_DIR$/Mobylife.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
